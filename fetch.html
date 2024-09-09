@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Headlines</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .news-item {
+            margin-bottom: 20px;
+        }
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Latest News</h1>
+        <div id="news-container" class="row"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const newsContainer = document.getElementById('news-container');
+            const apiUrl = 'https://raw.githubusercontent.com/your-username/your-repo-name/main/newsData.json';
+
+            function fetchNews() {
+                fetch(apiUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Failed to fetch news data');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        data.forEach(news => {
+                            const newsItem = document.createElement('div');
+                            newsItem.className = 'col-md-4 news-item';
+                            newsItem.innerHTML = `
+                                <div class="card">
+                                    <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${news.title}</h5>
+                                        <p class="card-text">Author: ${news.author}</p>
+                                        <p class="card-text">${news.description}</p>
+                                        <a href="${news.url}" target="_blank" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            `;
+                            newsContainer.appendChild(newsItem);
+                        });
+                    })
+                    .catch(error => {
+                        newsContainer.innerHTML = `<p>Error: ${error.message}</p>`;
+                    });
+            }
+
+            fetchNews();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+[
+    {
+      "id": "bbc-news",
+      "name": "BBC News",
+      "author": "Jane Smith",
+      "title": "Another Important Event",
+      "description": "Details about another important event happening around the world.",
+      "url": "https://www.bbc.com/news/world/2024/important-event",
+      "urlToImage": "https://cdn.bbc.com/news/images/important-event.jpg",
+      "publishedAt": "2024-09-08T10:20:00Z",
+      "content": "This is the full article content for the important event happening globally."
+    },
+    {
+      "id": "cnn",
+      "name": "CNN",
+      "author": "John Doe",
+      "title": "Breaking News: Major Discovery",
+      "description": "Scientists have made a groundbreaking discovery in the world of astronomy.",
+      "url": "https://www.cnn.com/news/major-discovery",
+      "urlToImage": "https://cdn.cnn.com/news/images/major-discovery.jpg",
+      "publishedAt": "2024-09-07T14:00:00Z",
+      "content": "This is the detailed content on the major discovery in astronomy."
+    },
+    {
+      "id": "al-jazeera",
+      "name": "Al Jazeera",
+      "author": "Maria Hernandez",
+      "title": "Political Crisis in Europe",
+      "description": "A deep political crisis is emerging in several European countries.",
+      "url": "https://www.aljazeera.com/news/political-crisis",
+      "urlToImage": "https://cdn.aljazeera.com/news/images/political-crisis.jpg",
+      "publishedAt": "2024-09-06T09:30:00Z",
+      "content": "The political crisis in Europe continues to develop as governments face challenges."
+    },
+    {
+      "id": "fox-news",
+      "name": "Fox News",
+      "author": "Emily Johnson",
+      "title": "Tech Companies Merge in Historic Deal",
+      "description": "Two of the largest tech companies have announced a historic merger.",
+      "url": "https://www.foxnews.com/tech/historic-deal",
+      "urlToImage": "https://cdn.foxnews.com/tech/images/historic-deal.jpg",
+      "publishedAt": "2024-09-05T16:45:00Z",
+      "content": "Details of the historic merger between two tech giants are unfolding."
+    },
+    {
+      "id": "ny-times",
+      "name": "New York Times",
+      "author": "Alice Brown",
+      "title": "Global Climate Summit",
+      "description": "World leaders gather to discuss urgent climate change actions.",
+      "url": "https://www.nytimes.com/news/climate-summit",
+      "urlToImage": "https://cdn.nytimes.com/news/images/climate-summit.jpg",
+      "publishedAt": "2024-09-04T08:15:00Z",
+      "content": "The global climate summit is focusing on immediate actions needed to combat climate change."
+    },
+    {
+      "id": "reuters",
+      "name": "Reuters",
+      "author": "David Lee",
+      "title": "Economic Growth Slows Worldwide",
+      "description": "New reports indicate a slowdown in global economic growth.",
+      "url": "https://www.reuters.com/news/economic-growth-slows",
+      "urlToImage": "https://cdn.reuters.com/news/images/economic-growth-slows.jpg",
+      "publishedAt": "2024-09-03T12:00:00Z",
+      "content": "The global economy is experiencing slower growth than anticipated according to new reports."
+    }
+  ]
+  
